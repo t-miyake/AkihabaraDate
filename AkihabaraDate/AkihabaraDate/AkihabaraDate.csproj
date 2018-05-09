@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Plugin.MediaManager" Version="0.4.5" />
+    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.4.5" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

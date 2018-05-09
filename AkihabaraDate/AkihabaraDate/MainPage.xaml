@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AkihabaraDate"
+             x:Class="AkihabaraDate.MainPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Button Text="デート開始" Clicked="DatesStartButton_OnClicked" />
+        <Label Text="" />
+        <Button Text="デート終了" Clicked="DatesStopButton_OnClicked" />
+        <Label Text="" />
+        <Label Text="" />
+        <Button Text="再生" Clicked="VoiceStartButton_OnClicked" />
+        <Label Text="" />
+        <Button Text="再生停止" Clicked="VoiceStopButton_OnClicked" />
+    </StackLayout>
+
+</ContentPage>
